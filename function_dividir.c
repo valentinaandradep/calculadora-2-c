@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() 
+int dividir() 
 {
     int numero1, numero2;
     int dividendo, divisor;
