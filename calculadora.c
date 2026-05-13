@@ -9,7 +9,7 @@ int main()
 
     do 
     {
-        printf("\n--- CALCULADORA - Por: Valentina Andrade ---\n");
+        printf("\nCALCULADORA - Por: Valentina Andrade\n");
         printf("1. Soma\n");
         printf("2. Subtração\n");
         printf("3. Divisão\n");
