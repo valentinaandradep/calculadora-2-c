@@ -1,8 +1,7 @@
 #include <stdio.h>
 
-int dividir() 
+int dividir(int numero1, int numero2) 
 {
-    int numero1, numero2;
     int dividendo, divisor;
     int quociente, resto;
 
