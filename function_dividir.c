@@ -2,18 +2,25 @@
 
 int dividir(int numero1, int numero2) 
 {
-    int dividendo, divisor;
-    int quociente, resto;
-
-    dividendo = numero1;
-    divisor = numero2;
-    quociente = 0;
-    resto = dividendo;
-
-    while (resto >= divisor) 
-    {
-        quociente = quociente + 1;
-        resto = resto - divisor;
+    if (numero2 == 0) {
+        printf("Erro: Divisão por zero!\n");
+        return 0; 
     }
 
+    int quociente = 0;
+    int resto = numero1;
+
+    while (resto >= numero2) 
+    {
+        quociente = quociente + 1;
+        resto = resto - numero2;
+    }
+
+    return quociente;
+}
+
+int main() {
+    int resultado = dividir(10, 2);
+    printf("Resultado: %d\n", resultado);
+    return 0;
 }
