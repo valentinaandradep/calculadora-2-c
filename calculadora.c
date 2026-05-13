@@ -9,7 +9,7 @@ int main()
 
     do 
     {
-        printf("\nCALCULADORA - Por: Valentina Andrade\n");
+        printf("\n--- CALCULADORA - Por: Valentina Andrade ---\n");
         printf("1. Soma\n");
         printf("2. Subtração\n");
         printf("3. Divisão\n");
@@ -33,14 +33,18 @@ int main()
                 printf("\nA subtração de %d com %d é igual a %d\n", n1, n2, resultado);
             } 
             else if (opcao == 3) {
-                printf("\nResultado da divisão: %d\n", dividir(n1, n2));
+                if (n2 != 0) {
+                    printf("\nResultado da divisão: %d\n", dividir(n1, n2));
+                } else {
+                    printf("\nErro: Divisão por zero!\n");
+                }
             } 
             else if (opcao == 4) {
                 printf("\nResultado da multiplicação: %d\n", multiplicar(n1, n2));
             }
         } 
         else if (opcao != 0) {
-            printf("\nOpção inválida!\n");
+            printf("\nOpção inválida! Tente novamente.\n");
         }
 
     } while (opcao != 0);
