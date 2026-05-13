@@ -4,7 +4,6 @@
 
 int main()
 {
-    int (*dividir)(int, int) = &dividir;
     assert(dividir(14,2) == 7);
     assert(dividir(99,3) == 33);
     assert(dividir(144,12) == 12);
